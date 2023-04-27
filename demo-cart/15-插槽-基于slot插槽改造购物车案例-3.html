@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- $event 使用场景: 
+        当绑定一个事件处理函数时，他的默认值被覆盖的情况下 -->
+
+    <!-- Counter 在 Goods 内部， 可以 直接 使用 item 及其 属性  -->
+
+      <!-- #event 就是 从 Counter组件 中 自定义事件 的 第二个 参数，  传过来 的 点击按钮 后 的 数量值 -->
+
+      <!-- 不仅要把 最新的 数量值 传递给 getNewNum， 还要 把 item 传递给 它， 这样才能 把 最新的 数量值 赋值 给 item.goods_count  -->
+            
+      <!-- <Counter :num="item.goods_count" @num-change="getNewNum(item,$event)"></Counter>
+     -->
+</body>
+</html>

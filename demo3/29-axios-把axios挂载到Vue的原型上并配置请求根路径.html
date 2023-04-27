@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 在 main.js 中 配置 ： 
+  
+  
+    1. 导入: import axios from 'axios'
+    2. Vue.prototype.axios = axios
+
+
+
+
+    // Vue.prototype: Vue 是在 Vue.js 应用程序中可用的全局对象，而 prototype 是 Vue 对象的特殊属性，您可以在其中定义属性和方法，这些属性和方法将在 Vue 类的所有实例之间共享。
+
+// axios = axios: 这将 Axios 库分配给 Vue.prototype 对象上名为 axios 的属性。这使得 axios 库可以从任何 Vue 组件内部访问，如 this.axios。
+
+// 因此，这行代码有效地使Axios库在整个Vue.js应用程序中可用，并且任何组件都可以通过访问this.axios来使用它。这是在Vue.js应用程序中配置全局依赖项的常用方法。
+// Vue.prototype.axios = axios---一般把 axios 命名为 $http---原因： Vue 内置 的 一些 成员， 都以 $ 开头，模仿 Vue 内置 的 一些 成员。
+    
+
+
+    配置 根路径： 
+    axios.defaults.baseURL = '请求根路径'
+  -->
+</body>
+</html>

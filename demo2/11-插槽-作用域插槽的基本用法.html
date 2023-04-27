@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 可以 给 slot 加 msg ， 希望 将来 向 这个 插槽 放内容 时 可以用到这个 msg 属性 中的 数据， 在 App 组件中， 可以 访问到 msg 属性 对应的 数据。 
+
+
+
+    obj 是 slot 中 定义的 msg , 可以 使用 obj.msg 得到 msg 的 值， 上面 还是， #content="obj" 
+    <p>{{ obj.msg }}</p>
+
+
+
+    <slot name="content" msg="hello vue.js"></slot> -->
+
+
+    <!-- 以上用法就叫做： 作用域插槽 
+        和 具名插槽 不冲突。
+
+    需要注意的是， 不一定叫 obj， 可以叫其他名字。 建议都用scope， 表示 作用域的意思, scope 就是 一个 形参， 和 style 里面 的 scoped 无任何关系。 
+    -->
+
+
+
+
+    <!-- 可以 传 多个 msg 作为 参数 -->
+    <!-- <slot name="content"  msg="hello" msg2="hello msg2"></slot> -->
+
+
+
+</body>
+</html>

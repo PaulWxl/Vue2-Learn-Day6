@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 想办法 切换的 时候， 不要把 切换前 的 组件 销毁掉：  
+    
+        3. 使用keep-alive 保持状态  默认情况下，切换动态组件时无法保持组件的状态。  此时可以使用vue 内置的<keep-alive>组件  保持动态组件的状态。示例代码如下：
+
+
+
+        4. keep-alive 对应的生命周期函数  当组件被 缓存 时，会自动触发组件的 deactivated 生命周期函数。  当组件被 激活 时，会自动触发组件的activated 生命周期函数。
+
+        需要注意的是，activated 和 deactivated 生命周期函数 ， 也是 生命周期函数， 所以 跟 methods 平级 声明。 
+
+
+        需要注意的是， activated 和 deactivated 生命周期函数 是 要在 缓存 或 激活 的 那个组件中， 本身 声明 的。
+
+
+
+        需要注意的是，先缓存， 再激活： --先缓存 切换 前 的 组件，再激活 切换后 的组件。
+
+
+        需要注意的是, activated 和 deactivated 生命周期函数 必须 在 有 keep-alive 标签 下 使用。 
+
+
+        需要注意的是, 如果 组件 是第一次 被 使用， 那么 先 触发 created , 然后 再 触发 activated 
+    -->
+
+</body>
+</html>

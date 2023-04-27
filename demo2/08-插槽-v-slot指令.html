@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 每一个 插槽 身上， 都应该 有一个 name 属性： 
+        <slot name=""></slot>, 指定当前这个插槽 的 名称， 不写name的话，默认 name =  default。 
+
+
+        默认情况下， 在 使用 组件 的 时候， 提供 的 内容 会被 填充 到 名字为 default 的 插槽 （name = default ）  之中。 
+
+
+
+
+        <Left>
+        指定内容， 要放到 哪个 插槽 中--: 在 内容 外面 包裹 一个 template标签， 使用 v-slot:插槽的name 
+        <template v-slot:default>
+            <p>这是在 Left 组件的 内容 区域 声明 的 p 标签。 </p>
+          </template>
+        </Left>
+
+
+        需要注意的是， v-slot 只能 用在 template 身上。 
+    -->
+</body>
+</html>
